@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "example/basic/dependency/dependency.proto";
+
+service RPCWIthNoHTTPAnnotation {
+  rpc Method(example.basic.dependency.DependencyMessage) returns (example.basic.dependency.DependencyMessage);
+}
